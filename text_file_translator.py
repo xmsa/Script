@@ -40,9 +40,9 @@ def save_file(string_list: str, base_path: str, file_name: str = "new_file.txt")
 
 def main():
     if len(sys.argv) == 2:
-        file_name = "new_file.txt"
+        file_name_save = "new_file.txt"
     elif len(sys.argv) == 3:
-        file_name = sys.argv[2]
+        file_name_save = sys.argv[2]
     else:
         print("python text_file_translator.py file_name [new_file_name]")
         return None
@@ -54,7 +54,7 @@ def main():
 
     if string_list:
         string_list = translator(string_list)
-        save_file(string_list, base_path, file_name)
+        save_file(string_list, base_path, file_name_save)
 
 
 if __name__ == "__main__":
