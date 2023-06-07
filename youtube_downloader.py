@@ -102,3 +102,22 @@ class YouTube_Downloader:
             self.__verbose and print(f"Download completed")
         except Exception as ex:
             print(f"error({ex}) {url}")
+
+
+def print_diss():
+    print("python youtube_downloader.py [url or file_name.txt] ")
+
+
+def main():
+    if len(sys.argv) == 2:
+        yd = YouTube_Downloader(verbose=True)
+        if sys.argv[1].endswith(".txt"):
+            yd.download_by_txt_file(input_path=sys.argv[1])
+        else:
+            yd.download_by_url(sys.argv[1])
+        return None
+    print_diss()
+
+
+if __name__ == "__main__":
+    main()

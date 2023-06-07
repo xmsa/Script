@@ -23,3 +23,11 @@ download file with textfile and url
   ``` python download_file_with_textfile.py file_name.txt ```
 #### decdownload file with txtfile and compress all file download in zip file
   ``` python download_file_with_textfile.py -s file_name.txt ```
+
+## youtube video downloader
+download youtube video with textfile and url
+### run script
+#### download file with url
+  ``` python youtube_downloader.py url ```
+#### decdownload file with txtfile 
+  ``` python youtube_downloader.py file_name.txt ```
