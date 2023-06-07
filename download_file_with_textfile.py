@@ -48,6 +48,31 @@ def zip_files(file_list, zipname):
     zipf.close()
 
 
+def print_diss():
+    print("python text_file_translator.py [-s] input")
 
-path_file = "Path txt file"
-download_by_file(path_file)
+    print("       input: file_name.txt or url")
+    print("       -s: if input == file_name.txt then compress all file download in zip file")
+
+
+def main():
+    if len(sys.argv) == 2 and sys.argv[1].endswith(".txt"):
+        if sys.argv[1].endswith(".txt"):
+
+            path_file = sys.argv[1]
+            download_by_file(path_file, compressing_files=False)
+            
+        else:
+            url = sys.argv[1]
+            download_by_url(url, os.path.dirname(__file__))
+            
+        return None
+    elif len(sys.argv) == 3:
+        if sys.argv[1] == "-s" and sys.argv[2].endswith(".txt"):
+            download_by_file(path_file, compressing_files=True)
+            return None
+    print_diss()
+
+
+if __name__ == "__main__":
+    main()
