@@ -13,3 +13,13 @@ Goedel number calculator
   ``` python goedel_number.py x y ```
 #### decoding z:<x,y>
   ```python goedel_number.py z ```
+
+## file downloader
+download file with textfile and url
+### run script
+#### download file with url
+  ``` python text_file_translator.py url ```
+#### decdownload file with txtfile 
+  ``` python text_file_translator.py file_name.txt ```
+#### decdownload file with txtfile and compress all file download in zip file
+  ``` python text_file_translator.py -s file_name.txt ```
