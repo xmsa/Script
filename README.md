@@ -18,8 +18,8 @@ Goedel number calculator
 download file with textfile and url
 ### run script
 #### download file with url
-  ``` python text_file_translator.py url ```
+  ``` python download_file_with_textfile.py url ```
 #### decdownload file with txtfile 
-  ``` python text_file_translator.py file_name.txt ```
+  ``` python download_file_with_textfile.py file_name.txt ```
 #### decdownload file with txtfile and compress all file download in zip file
-  ``` python text_file_translator.py -s file_name.txt ```
+  ``` python download_file_with_textfile.py -s file_name.txt ```

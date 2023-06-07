@@ -49,7 +49,7 @@ def zip_files(file_list, zipname):
 
 
 def print_diss():
-    print("python text_file_translator.py [-s] input")
+    print("python download_file_with_textfile.py [-s] input")
 
     print("       input: file_name.txt or url")
     print("       -s: if input == file_name.txt then compress all file download in zip file")
