@@ -92,9 +92,9 @@ def Change_Port():
 
 def Start_VPN(config, flag=True):
 	if flag:
-		run_command(f"/home/msa/.local/etc/v2ray/v2ray --confdir {config}")
+		run_command(f"$HOME/.local/etc/v2ray/v2ray --confdir {config}")
 	else:
-		run_command(f"/home/msa/.local/etc/v2ray/v2ray --config {config}")
+		run_command(f"$HOME/.local/etc/v2ray/v2ray --config {config}")
 		
 
 if __name__ == "__main__":
