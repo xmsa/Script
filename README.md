@@ -56,3 +56,12 @@ remove multispace and befor or after . in file name
 ``` python rename_file.py```
 #### Run script with multi directory
 ``` python rename_file.py dir1 [dir2 ,...]```
+
+## Subtitle LTR to RTL
+fixed RTL Problem on subtitle
+
+### run script
+#### with Directory
+  ``` python Subtitle_ltr_to_rtl.py <Directory>```
+#### with SRT file 
+  ``` python Subtitle_ltr_to_rtl.py <SRT file>```
