@@ -1,4 +1,4 @@
-# Mini Project
+# Script 
 
 ## text_file_translator
 ### install pakage
@@ -65,3 +65,40 @@ fixed RTL Problem on subtitle
   ``` python Subtitle_ltr_to_rtl.py <Directory>```
 #### with SRT file 
   ``` python Subtitle_ltr_to_rtl.py <SRT file>```
+
+## 🧾 Thesis File Merger for Similarity Checking
+
+This script is designed to **preprocess and merge multiple LaTeX files** of an academic thesis into a single, clean text file — ideal for uploading to similarity detection platforms such as **Hamanandjoo** (همانندجو), which often require a flattened document for accurate analysis.
+
+🔗 You can find this script inside the thesis template directory:
+[**Thesis Isfahan template**](https://github.com/xmsa/TexTemplate/tree/main/Thesis%20Isfahan%20template)
+
+---
+
+### ✨ Features:
+
+* Recursively expands LaTeX `\input{}` and `\include{}` directives.
+* Ignores content after `\appendix` to limit analysis to main body chapters.
+* Removes LaTeX comments (`% ...`) while preserving escaped symbols (e.g., `\%`).
+* Outputs a clean `.txt` file ready for similarity/plagiarism check tools.
+
+---
+
+
+### ⚠️ Important Notes:
+
+* 📂 **Backup First:** Make sure to **create a backup of your thesis files** before running the script. It doesn’t modify existing files, but it's always good practice to back up before preprocessing.
+* 📄 **Appendices are excluded** from the output by design, as they are often not required for similarity checks.
+
+---
+
+### ▶️ Example Usage
+
+```bash
+cd "Thesis Isfahan template"
+python thesis_builder.py Thesis.tex -o cleaned_output.txt
+```
+
+> Make sure Python is installed and your working directory includes the full thesis project.
+
+
